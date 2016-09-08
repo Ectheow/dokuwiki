@@ -3,7 +3,7 @@ import sys
 import xml.etree.ElementTree as ET
 import getpass
 import argparse
-import xmlrpc
+from . import xmlrpc
 
 class DokuWikiError(RuntimeError):
     def __init__(self, string, xml, response):
